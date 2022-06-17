@@ -1,33 +1,55 @@
-package com.example.demo.students;
-
+package com.example.test.students;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+
 @Document(collection="jntuCollection")
 public class students {
 	@Id
 	 public ObjectId _id;
-	private String firstName;
-	private String lastName;
-	private String studentNumber;
-	public String getFirstName() {
-		return firstName;
+	private String firstname;
+	private String lastname;
+	private String emailid;
+	private String city;
+	private String branch;
+	private String phone;
+	public String getFirstname() {
+		return firstname;
 	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
 	}
-	public String getLastName() {
-		return lastName;
+	public String getLastname() {
+		return lastname;
 	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
 	}
-
-	public String getStudentNumber() {
-		return studentNumber;
+	public String getEmailid() {
+		return emailid;
 	}
-	public void setStudentNumber(String studentNumber) {
-		this.studentNumber = studentNumber;
+	public void setEmailid(String emailid) {
+		this.emailid = emailid;
 	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public String getBranch() {
+		return branch;
+	}
+	public void setBranch(String branch) {
+		this.branch = branch;
+	}
+	public String getPhone() {
+		return phone;
+	}
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	
+	
 
 }
