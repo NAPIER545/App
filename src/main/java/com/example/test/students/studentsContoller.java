@@ -51,9 +51,12 @@ public class studentsContoller {
 	{
 		students currentStudent;
 		currentStudent = stuRepo.findById(id).get();
-		currentStudent.setFirstName(student.getFirstName());
-		currentStudent.setLastName(student.getLastName());
-		currentStudent.setStudentNumber(student.getStudentNumber());
+		currentStudent.setFirstname(student.getFirstname());
+		currentStudent.setLastname(student.getLastname());
+		currentStudent.setEmailid(student.getEmailid());
+		currentStudent.setBranch(student.getBranch());
+		currentStudent.setPhone(student.getPhone());
+		currentStudent.setCity(student.getCity());
 		return stuRepo.save(currentStudent);
 		
 	}
